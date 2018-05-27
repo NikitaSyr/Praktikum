@@ -23,5 +23,9 @@ public class Main {
             int c = a - b;
             System.out.println("c =  " + c);
         }
+        if (s.equals("*")) {
+            int c = (2*a) * b;
+            System.out.println("c =  " + c);
+        }
     }
 }
