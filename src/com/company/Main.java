@@ -5,16 +5,23 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a, b, c;
 
         System.out.println("Введите первое число");
-        a = sc.nextInt();
+        int a = sc.nextInt();
 
         System.out.println("Введите второе число");
-        b = sc.nextInt();
+        int b = sc.nextInt();
 
-        c = a + b;
+        System.out.println("Введите арифметический символ");
+        String s = sc.next();
 
-        System.out.println("c = " + c);
+        if (s.equals("+")) {
+            int c = a + b;
+            System.out.println("c = " + c);
+        }
+        if (s.equals("-")) {
+            int c = a - b;
+            System.out.println("c =  " + c);
+        }
     }
 }
